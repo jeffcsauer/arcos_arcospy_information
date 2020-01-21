@@ -54,7 +54,7 @@ Or the development version from GitHub:
 # install.packages("devtools")
 devtools::install_github('wpinvestigative/arcos')
 
-`install.packages("arcos")`
+install.packages("arcos")
 ```
 
 **Python: installing arcospy**
@@ -67,7 +67,7 @@ pip install arcospy
 
 ## Contribute
 
-Contributing guidelines are outlined in [contributing.md](https://github.com/jeffcsauer/arcos_arcospy_information/contributing.md).
+Contributing guidelines are outlined in [contributing.md](https://github.com/jeffcsauer/arcos_arcospy_information/blob/master/contributing.md).
 
 ## Credits
 
@@ -77,4 +77,4 @@ Contributing guidelines are outlined in [contributing.md](https://github.com/jef
 
 ## License
 
-MIT
+MIT (2019); The Washington Post and The Charleston Gazette-Mail (2019)
