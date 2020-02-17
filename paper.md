@@ -53,6 +53,6 @@ All commands share the same name between `arcos` and `arcospy`. This allows user
 
 ``arcos`` is available on [CRAN](https://cran.r-project.org/web/packages/arcos/index.html) as well as [Github](https://github.com/wpinvestigative/arcos).
 
-``arcospy`` is available on [PyPI](https://pypi.org/project/arcospy/) as a pip installable package as well as [Github](https://github.com/wpinvestigative/arcos).
+``arcospy`` is available on [PyPI](https://pypi.org/project/arcospy/) as a pip installable package as well as [Github](https://github.com/jeffcsauer/arcospy).
 
 # Citations
