@@ -26,7 +26,7 @@ Build status is evaluated via CRAN for `arcos` and travis for `arcospy`.
 
 ## Features
 
-**arcos** and **arcospy** offer 24 functions for users to access DEA ARCOS data using pharmacies, distributors, counties, or states as the unit of analysis. These functions have the exact same name in both pieces of software to rapidly switch between languages if the need arises (i.e. if a certain type of analysis is available in R or Python).
+**arcos** and **arcospy** offer 30 functions for users to access DEA ARCOS data using pharmacies, distributors, counties, or states as the unit of analysis. These functions have the exact same name in both pieces of software to rapidly switch between languages if the need arises (i.e. if a certain type of analysis is available in R or Python).
 
 ## Examples
 
