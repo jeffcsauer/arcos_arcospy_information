@@ -40,16 +40,6 @@ Several examples of using both `arcos` and `arcospy` are available on their resp
 
 **R: installing arcos**
 
-`arcos` is available via CRAN.
-
-Two common options include:
-
-```R
-install.packages("arcos")
-```
-
-Or the development version from GitHub:
-
 ```R
 # install.packages("devtools")
 devtools::install_github('wpinvestigative/arcos')
