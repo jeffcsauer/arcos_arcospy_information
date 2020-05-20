@@ -44,12 +44,10 @@ Several examples of using both `arcos` and `arcospy` are available on their resp
 #Get the latest stable release from CRAN:
 install.packages("arcos")
 
-# OR
+#...or via devtools:
 
 # install.packages("devtools")
 devtools::install_github('wpinvestigative/arcos')
-
-install.packages("arcos")
 ```
 
 **Python: installing arcospy**
