@@ -14,7 +14,7 @@ The ongoing Opioid Crisis in the United States poses serious public health issue
 ## Build status
 Build status is evaluated via CRAN for `arcos` and travis for `arcospy`.
 
-**arcos**: ![CRAN repository](https://cran.r-project.org/src/contrib/Archive/arcos/)
+**arcos**: ![CRAN Badge](http://www.r-pkg.org/badges/version/arcos)
 
 **arcospy**: ![Build Status](https://travis-ci.com/jeffcsauer/arcospy.svg?token=sRx5dHJBVzwnJnFuh3p9&branch=master)
 
