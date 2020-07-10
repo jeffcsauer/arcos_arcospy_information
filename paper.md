@@ -38,9 +38,10 @@ The ongoing Opioid Overdose Crisis in the United States presents a complex socio
 Previously, researchers wanting to use ARCOS data relied on what was made available by the DEA, typically in the form of state-level estimates, or submitted special access data requests to the DEA [@Kenan2012;@reisman_2009]. While alternative data on prescription records are offered by the Centers for Medicare & Medicaid Services in the [Medicare Provider Utilization and Payment Datasets](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data), this data pertains to a specific sample of the population and spans a different set of years (2011 to 2017). The release of national, longitudinal, sub-state ARCOS data is a major contribution for researchers interested in the distribution of prescription opioids and the subsequent sociomedical impacts.
 
 In raw format, the the ARCOS database is more than 130 gigabytes and includes several hundred columns. Thus, the purpose of `arcos` and `arcospy` are meant to:
-- Simplify access to an open, large, robust prescription opioid database
-- Provide measures of prescription opioid distribution relevant to both the medical and social sciences 
-- Promote analytical flexibility and reproducibility through mirrored functionality across `R` and `Python` 
+
+-   Simplify access to an open, large, robust prescription opioid database
+-   Provide measures of prescription opioid distribution relevant to both the medical and social sciences 
+-   Promote analytical flexibility and reproducibility through mirrored functionality across `R` and `Python` 
 
 ## API Structure
 
