@@ -26,7 +26,6 @@ Build status is evaluated via CRAN for `arcos` and travis for `arcospy`.
 
 ## Features
 
-<<<<<<< HEAD
 **arcos** and **arcospy** offers nearly 30 functions for users to access DEA ARCOS data using pharmacies, distributors, counties, or states as the unit of analysis, as well as useful supplementary information. These functions have the exact same name in both `R` and `Python`, allowing users to rapidly switch between languages if the need arises (i.e. if a certain type of analysis is available only in R or Python).
 
 
@@ -63,9 +62,6 @@ __Functions and the available datasets (Read the [reference page](https://wpinve
 | [total_manufacturers_state()](https://wpinvestigative.github.io/arcos/reference/total_manufacturers_state.html)   | Get total pills for each manufacturer in a state                                | Summarized   | 2006 - 2014 | Oxycodone & Hydrocodone |                                                    |
 | [total_pharmacies_county()](https://wpinvestigative.github.io/arcos/reference/total_pharmacies_county.html)       | Get total pills for each pharmacy in a county                                   | Summarized   | 2006 - 2014 | Oxycodone & Hydrocodone | Retail Pharmacy, Chain Pharmacy, and Practitioners |
 | [total_pharmacies_state()](https://wpinvestigative.github.io/arcos/reference/total_pharmacies_state.html)         | Get total pills for each pharmacy in a state                                    | Summarized   | 2006 - 2014 | Oxycodone & Hydrocodone | Retail Pharmacy, Chain Pharmacy, and Practitioners |
-=======
-**arcos** and **arcospy** offer 30 functions for users to access DEA ARCOS data using pharmacies, distributors, counties, or states as the unit of analysis. These functions have the exact same name in both pieces of software to rapidly switch between languages if the need arises (i.e. if a certain type of analysis is available in R or Python).
->>>>>>> 469f95fc9216fd1fe8f0b646a3b030fe936f5ff5
 
 ## Examples
 
