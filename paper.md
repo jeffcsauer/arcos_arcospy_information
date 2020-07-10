@@ -1,5 +1,5 @@
 ---
-title: 'arcos and arcospy: R and Python packages for accessing the DEA ARCOS database from 2006 - 2012'
+title: 'arcos and arcospy: R and Python packages for accessing the DEA ARCOS database from 2006 - 2014'
 tags:
   - R
   - Python
@@ -25,17 +25,29 @@ affiliations:
    index: 1
  - name: University of Maryland, College Park, Department of Geographical Sciences
    index: 2
+<<<<<<< HEAD
 date: 09 July 2020
+=======
+date: 19 March 2020
+>>>>>>> 469f95fc9216fd1fe8f0b646a3b030fe936f5ff5
 bibliography: paper.bib
 ---
 
 # Summary
 
+<<<<<<< HEAD
 The ongoing Opioid Overdose Crisis in the United States presents a complex sociomedical epidemic. Researchers, journalists, and government agencies are actively investigating the myriad impacts of the crisis. One powerful tool for understanding trends in prescription opioid distribution is the Drug Enforcement Agency's (DEA) Automation of Reports and Consolidated Orders System (ARCOS). ARCOS tracks the commercial distribution of controlled substances in the United States. The data is highly detailed, tracking commercial origin, pharmacy order frequency, point-of-sale distribution, and more. For a variety of reasons ranging from patient confidentiality to protecting trade secrets, access to sub-state ARCOS data is normally restricted. Recent litigation efforts by *The Washington Post*, HD Media, and local journalists allowed for the public release of a large portion of the ARCOS database from 2006 to 2012. `arcos` and `arcospy` are open source API wrappers in `R` and `Python`, respectively, that allow researchers and interested citizens to easily access this newly available portion of the ARCOS database.
+=======
+The ongoing Opioid Crisis in the United States presents a complex sociomedical epidemic. Researchers, journalists, and government agencies are actively investigating the myriad impacts of the crisis. One powerful tool for understanding trends in prescription opioid distribution is the Drug Enforcement Agency's (DEA) Automation of Reports and Consolidated Orders System (ARCOS). ARCOS tracks the commercial distribution of controlled substances in the United States. The data is highly detailed, tracking commercial origin, pharmacy order frequency, point-of-sale distribution, and more. For a variety of reasons ranging from patient confidentiality to protecting trade secrets, access to the ARCOS data is normally restricted. Recent litigation efforts by *The Washington Post*, HD Media, and local journalists allowed for the public release of a large portion of the ARCOS database from 2006 to 2014. `arcos` and `arcospy` are open source API wrappers in R and Python, respectively, that allow researchers and interested citizens to easily access the ARCOS database.
+>>>>>>> 469f95fc9216fd1fe8f0b646a3b030fe936f5ff5
 
 ## Statement of need
 
+<<<<<<< HEAD
 Previous analyses that sought to use ARCOS data had to make use of what data the DEA chose to make available (typically state-level estimates, as is the case of [@reisman_2009]) or submit special data requests to the DEA [@Kenan2012]. While alternative data on prescription records are offered by the [Medicare Provider Utilization and Payment Datasets](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data) provided by the Centers for Medicare & Medicaid Services,  these datasets pertain to a specific sample of the population and cover a different set of years (2011 to 2017). The release of national, longitudinal, sub-state ARCOS data is a major contribution for researchers interested in the distribution of prescription opioids and the subsequent sociomedical impacts.
+=======
+In raw format, the available portion of the ARCOS database is more than 150 gigabytes and includes several hundred columns. Thus, `arcos` and `arcospy` are meant to simplify access to the database and gather relevant measures of prescription opioid distribution. Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2014. However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2014. Full documentation on how data is collected by the DEA is available in the [ARCOS Registrant Handbook](https://www.deadiversion.usdoj.gov/arcos/handbook/full.pdf). Supplemental commands return relevant data - such as county population - gathered from the American Community Survey.
+>>>>>>> 469f95fc9216fd1fe8f0b646a3b030fe936f5ff5
 
 In raw format, the the ARCOS database is more than 130 gigabytes and includes several hundred columns. Thus, the purpose of `arcos` and `arcospy` are meant to:
 - Simplify access to an open, large, robust prescription opioid database
@@ -95,7 +107,7 @@ There are several ways to conceptualize the unit of analysis for opioids from th
 
 # Availability
 
-``arcos`` is available on [CRAN](https://cran.r-project.org/web/packages/arcos/index.html) as well as [Github](https://github.com/wpinvestigative/arcos).
+``arcos`` is available on [CRAN](https://cran.r-project.org/web/packages/arcos/index.html) as well as [Github](https://github.com/wpinvestigative/arcos)
 
 ``arcospy`` is available on [PyPI](https://pypi.org/project/arcospy/) as a pip installable package as well as [Github](https://github.com/jeffcsauer/arcospy).
 
