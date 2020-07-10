@@ -35,7 +35,7 @@ The ongoing Opioid Overdose Crisis in the United States presents a complex socio
 
 ## Statement of need
 
-Previous analyses that sought to use ARCOS data had to make use of what data the DEA chose to make available (typically state-level estimates, as is the case of [@reisman_2009]) or submit special data requests to the DEA [@Kenan2012]. While alternative data on prescription records are offered by the [Medicare Provider Utilization and Payment Datasets](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data) provided by the Centers for Medicare & Medicaid Services,  these datasets pertain to a specific sample of the population and cover a different set of years (2011 to 2017). The release of national, longitudinal, sub-state ARCOS data is a major contribution for researchers interested in the distribution of prescription opioids and the subsequent sociomedical impacts.
+Previous analyses that sought to use ARCOS data had to make use of what data the DEA chose to make available, typically in the form of national or state-level estimates, or submit special data requests to the DEA [@Kenan2012;@reisman_2009]. While alternative data on prescription records are offered by the Centers for Medicare & Medicaid Services in the [Medicare Provider Utilization and Payment Datasets](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data), this data pertains to a specific sample of the population and spans a different set of years (2011 to 2017). The release of national, longitudinal, sub-state ARCOS data is a major contribution for researchers interested in the distribution of prescription opioids and the subsequent sociomedical impacts.
 
 In raw format, the the ARCOS database is more than 130 gigabytes and includes several hundred columns. Thus, the purpose of `arcos` and `arcospy` are meant to:
 - Simplify access to an open, large, robust prescription opioid database
@@ -50,32 +50,35 @@ Both `arcos` and `arcospy` use parameter delivery - `urltools` in `R` and `reque
 
 ## Data Availability and Basic Usage
 
- Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2012. 
+ Data can be gathered at the pharmacy, distributor, county, or state as the geographic unit of analysis. Depending on the geographic level, there may be raw, summarized, or supplemental data available. For example, the `county_raw()` command returns each individual ARCOS record for a given county from 2006 to 2012. The following code chunk demonstrates this function in `R`:
 
- ```
+ ```{.r}
 library(arcos)
 # Gather all ARCOS records for Hill County, Montana
 HillOpioids <- county_raw(county = "Hill", state = "MT", key = "WaPo")
 head(HillOpioids)
-
-| REPORTER_DEA_NO | REPORTER_BUS_ACT | REPORTER_NAME        | ... | Reporter_family            | dos_str |
-|-----------------|------------------|----------------------|-----|----------------------------|---------|
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 5.0     |
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 5.0     |
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 5.0     |
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 5.0     |
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 7.5     |
-| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | McKesson Corporation       | 20.0    |
 ```
 
- However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2012. 
+```{.r}
+| REPORTER_DEA_NO | REPORTER_BUS_ACT | REPORTER_NAME        | ... | dos_str |
+|-----------------|------------------|----------------------|-----|---------|
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 5.0     |
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 5.0     |
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 5.0     |
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 5.0     |
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 7.5     |
+| PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 20.0    |
+```
 
- ```
+ However, the `summarized_county_annual()` command returns the annual summarized totals for a given county for each year of 2006 to 2012. The following code chunk demonstrates this function in `Python`:
+
+ ```{.python}
 from arcos import summarized_county_annual
 # Gather summarized ARCOS records for Hill County, Montana
 HillOpioidsSummarized = summarized_county_annual(county = "Hill", state = "MT", key = "WaPo")
 HillOpioidsSummarized.head()
-
+```
+```{.python}
  	BUYER_COUNTY 	BUYER_STATE 	year 	count 	DOSAGE_UNIT 	countyfips
 0 	HILL 	        MT 	            2006 	1516 	594700 	        30041
 1 	HILL 	        MT 	            2007 	1710 	505430 	        30041
