@@ -55,11 +55,13 @@ Both `arcos` and `arcospy` use parameter delivery - `urltools` in `R` and `reque
  ```{.r}
 library(arcos)
 # Gather all ARCOS records for Hill County, Montana
-HillOpioids <- county_raw(county = "Hill", state = "MT", key = "WaPo")
-head(HillOpioids)
+HillRaw <- county_raw(county = "Hill", 
+                      state = "MT", 
+                      key = "WaPo")
+head(HillRaw)
 ```
 
-```{.r}
+```
 | REPORTER_DEA_NO | REPORTER_BUS_ACT | REPORTER_NAME        | ... | dos_str |
 |-----------------|------------------|----------------------|-----|---------|
 | PM0023046       | DISTRIBUTOR      | MCKESSON CORPORATION | ... | 5.0     |
@@ -75,16 +77,18 @@ head(HillOpioids)
  ```{.python}
 from arcos import summarized_county_annual
 # Gather summarized ARCOS records for Hill County, Montana
-HillOpioidsSummarized = summarized_county_annual(county = "Hill", state = "MT", key = "WaPo")
-HillOpioidsSummarized.head()
+HillSummarized = summarized_county_annual(county = "Hill", 
+                                          state = "MT", 
+                                          key = "WaPo")
+HillSummarized.head()
 ```
-```{.python}
- 	BUYER_COUNTY 	BUYER_STATE 	year 	count 	DOSAGE_UNIT 	countyfips
-0 	HILL 	        MT 	            2006 	1516 	594700 	        30041
-1 	HILL 	        MT 	            2007 	1710 	505430 	        30041
-2 	HILL 	        MT 	            2008 	2467 	715560 	        30041
-3 	HILL 	        MT 	            2009 	3200 	851560 	        30041
-4 	HILL 	        MT 	            2010 	3290 	803760 	        30041
+```
+ 	BUYER_COUNTY 	BUYER_STATE  year 	count 	DOSAGE_UNIT 	countyfips
+0 	HILL 	        MT 	         2006 	1516 	594700 	        30041
+1 	HILL 	        MT 	         2007 	1710 	505430 	        30041
+2 	HILL 	        MT 	         2008 	2467 	715560 	        30041
+3 	HILL 	        MT 	         2009 	3200 	851560 	        30041
+4 	HILL 	        MT 	         2010 	3290 	803760 	        30041
 
  ```
 
