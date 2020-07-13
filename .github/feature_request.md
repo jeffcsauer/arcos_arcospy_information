@@ -1,0 +1,1 @@
+If you have an idea for `arcos` or `arcospy`, please describe your idea here! The maintaters of `arcos` and `arcospy` are actively interested in expanding the capabilities of the software, improving user experience, and filling in important documentation. 
