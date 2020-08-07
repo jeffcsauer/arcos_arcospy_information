@@ -5,6 +5,8 @@ Welcome to an informational landing page for the R `arcos` and Python `arcospy` 
 
 [**arcospy** repository](https://github.com/jeffcsauer/arcospy)
 
+**We recommend reading [the vignette](https://github.com/jeffcsauer/arcos_arcospy_information/tree/master/docs/R_Python_arcos_vignette.html) that provides an overview of the API, a quick start guide, and demonstration of R/Python dual functionality!**
+
 ## Motivation
 The ongoing Opioid Crisis in the United States poses serious public health issues. Understanding *how* the United States arrived at the present crisis is crucial to avoid future crises. One powerful tool for understanding trends in prescription opioid distribution is the Drug Enforcement Agency's (DEA) Automation of Reports and Consolidated Orders System (ARCOS). In raw format, the available portion of the ARCOS database is more than 150 gigabytes and includes several hundred columns. Thus, `arcos` and `arcospy` are meant to simplify access to the available data so researchers and interested citizens can rapidly gather relevant measures of prescription opioid distribution. The data available in `arcos` and `arcospy` spans the years 2006 to 2014. These are the years leading up to the now widely recognized Opioid Crisis. The data has been featured in a series of investigative reporting articles by both national and regional newspapers. There are numerous potential applications of this data to the study of health sciences, criminology, medical sociology, and more.  
 
