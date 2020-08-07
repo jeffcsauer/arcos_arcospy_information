@@ -3,11 +3,11 @@ title: "Accessing ARCOS data in R and Python"
 author: "Authors: arcos and arcospy developers"
 date: "Last updated: August 7, 2020"
 output:
+  pdf_document: default
   html_document:
     code_folding: show
     theme: readable
     toc: yes
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
