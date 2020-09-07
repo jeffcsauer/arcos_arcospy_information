@@ -49,7 +49,7 @@ In raw format, the ARCOS database is more than 130 gigabytes and includes severa
 
 The `arcos` and `arcospy` API is [publically available](https://arcos-api.ext.nile.works/__swagger__/) and hosted using the [OpenAPI specification](https://swagger.io/specification/). The primary maintainers of API database are members of the Data Reporting Team at *The Washington Post*. A key is required to use the API. The standard key is `WaPo` and additional keys may be sourced from [the Github repository](https://github.com/wpinvestigative/arcos).
 
-All commands share the same name between `arcos` and `arcospy`. This allows users to rapidly switch between languages if the need arises. Outputs from all of the functions are delivered in popular formats - `data.frames` in `R` and `pandas.DataFrame` in `python` -  to enable statistical, spatial, network, or other types of analysis.
+All commands share the same name between `arcos` and `arcospy`. This allows users to rapidly switch between languages if the need arises. Outputs from all of the functions are delivered in popular formats - `data.frames` in `R` and `pandas.DataFrame` in `python` - to enable statistical, spatial, network, or other types of analysis.
 
 Both `arcos` and `arcospy` use parameter delivery - `urltools` in `R` and `requests` in `Python` - to build the API query. Checks are in place to ensure that invalid inputs are not passed to the API. For example, a series of integers cannot be passed as a county name. Corrective warning messages are returned to users who provide invalid inputs. 
 
